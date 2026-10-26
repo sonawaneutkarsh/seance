@@ -1,0 +1,32 @@
+$ python3 -m seance --list-spirits
+cobol    COBOL (1959) — Still running the world's banks from beyond the grave.
+fortran  FORTRAN (1957) — Computed the trajectory to the Moon, then refused to retire.
+basic    BASIC (1964) — Taught a generation to code on machines that hummed in school basements.
+algol    ALGOL (1958) — Parent of nearly every language you use; remembered by almost none of them.
+
+$ python3 -m seance "Will my code outlive me?" --spirit cobol --offline
+The spirit of COBOL (1959) speaks:
+PROCEDURE DIVISION. I HAVE READ YOUR QUERY, AND I HAVE FILED IT.
+Your question — "Will my code outlive me?" — echoes in the machine room.
+The dead answer in formal, procedural, ALL-CAPS divisions.
+END PROGRAM. I return to the mainframe now. It never sleeps.
+
+[source: offline fallback (deterministic)]
+
+$ python3 -m seance "Why did you disappear?" --spirit basic --offline
+The spirit of BASIC (1964) speaks:
+30 REM I HAVE BEEN WAITING SINCE 1984. ASK AWAY.
+Your question — "Why did you disappear?" — echoes in the machine room.
+The dead answer in friendly, numbered lines, eager to help.
+GOTO 10. The loop closes. The loop always closes.
+
+[source: offline fallback (deterministic)]
+
+$ python3 -m seance "Did you really go to the Moon?" --spirit fortran --offline
+The spirit of FORTRAN (1957) speaks:
+GOTO 100. 100 CONTINUE. YOUR QUERY HAS BEEN ITERATED.
+Your question — "Did you really go to the Moon?" — echoes in the machine room.
+The dead answer in terse, numerical, fond of GOTO.
+RETURN. I go back to the punch-card deck. Do not shuffle it.
+
+[source: offline fallback (deterministic)]
